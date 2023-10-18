@@ -1,0 +1,20 @@
+<HTML><HEAD><TITLE>A function with a parameter</TITLE>
+<SCRIPT>
+function openAndCenterWindow(url)
+{
+    var the_window =  window.open(url,'the_window',
+				'height=300,width=400');
+    var screen_height = window.screen.availHeight;
+    var screen_width = window.screen.availWidth;
+    var left_point = parseInt(screen_width / 2) - 200;
+    var top_point = parseInt(screen_height / 2) - 150;
+    the_window.moveTo(left_point, top_point);
+    the_window.focus();
+}
+</SCRIPT></HEAD>
+<BODY>Click me to open a small, centered, window... 
+<a href="#" onClick="openAndCenterWindow('images/7.jpg');
+	return false;">and see something nice!</a>
+</BODY>
+</HTML>
+

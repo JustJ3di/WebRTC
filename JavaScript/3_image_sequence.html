@@ -1,0 +1,41 @@
+<HTML>
+<HEAD><TITLE>JavaScript time-based events demo</TITLE>
+<SCRIPT> 
+<!---                    
+var index = 1;
+var numpics = 6;
+var delay = 1500;
+var pics = new Array(numpics);
+pics[1] = "images/1.jpg";
+pics[2] = "images/2.jpg";
+pics[3] = "images/3.jpg";
+pics[4] = "images/4.jpg";
+pics[5] = "images/5.jpg";
+pics[6] = "images/6.jpg";
+
+function NextImage() {                           
+  if (index < numpics) {
+    index++; 
+  } else {
+    index=1;
+  }
+  document.picture.src = pics[index]; 
+  //setTimeout("NextImage()",delay);
+}
+// -->                  
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<H1>WebRTC class @ unina</H1>
+<br>
+<IMG src="#" name="picture">
+<SCRIPT> 
+<!---                    
+  document.picture.src = pics[1];
+  setInterval("NextImage()",delay);
+  //setTimeout("NextImage()",delay);
+// -->                  
+</SCRIPT>
+</BODY>
+</HTML>

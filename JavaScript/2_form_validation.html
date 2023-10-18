@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<script> 
+<!-- 
+function checkData() 
+{ 
+var correct = true 
+if (document.MyForm.cognome.value == "") {correct = false; alert("Insert your last name!")} 
+if (document.MyForm.nome.value == "") {correct = false; alert("Insert your first name!")} 
+if (document.MyForm.email.value == "") {correct = false; alert("Insert your e-mail address!")} 
+if ((document.MyForm.email.value.indexOf("@") == -1 ) && (document.MyForm.email.value !== "")) {correct = false; alert("e-mail is not valid!")} 
+return correct 
+} 
+//--> 
+</script> </script>
+</HEAD>
+<BODY onSubmit="return checkData()">
+<H1>WebRTC class @ unina</H1>
+<br>
+<FORM NAME="MyForm"> 
+<SELECT NAME="titolo" SIZE=1>
+    <OPTION SELECTED> Mr.
+    <OPTION> Mrs.
+    <OPTION> Dr.
+    <OPTION> Prof.
+    <OPTION> None of the above    
+</SELECT><p>
+Last name: <INPUT TYPE="text" NAME="cognome" SIZE=30><p>
+First name: <INPUT TYPE="text" NAME="nome" SIZE=30><p>
+Email: <INPUT TYPE="text" NAME="email" SIZE=30><p>
+Age: 
+<INPUT TYPE="radio" NAME="eta" VALUE="a">0-17
+<INPUT TYPE="radio" NAME="eta" VALUE="b">18-26
+<INPUT TYPE="radio" NAME="eta" VALUE="c">27-35
+<INPUT TYPE="radio" NAME="eta" VALUE="d">&gt;35
+<p>Skills:
+<INPUT TYPE="checkbox" NAME="skill" VALUE="Linux">GNU/Linux
+<INPUT TYPE="checkbox" NAME="skill" VALUE="Windows">Windows
+<INPUT TYPE="checkbox" NAME="skill" VALUE="Office">Office
+<INPUT TYPE="checkbox" NAME="skill" VALUE="Java">Java
+
+<p><INPUT TYPE="submit">
+<INPUT TYPE="reset" NAME="resetbutton" VALUE="Clear data"> 
+</FORM> 
+</BODY>
+</HTML>
